@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CodeChef-Task-Manager</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="type_your_email">Type your Email</string>
+    <string name="type_your_pass">Type your Password</string>
+    <string name="retype_your_pass">Retype your Password</string>
+    <string name="already_signed_in">Already Signed Up? Sign In</string>
+    <string name="not_signed_in_yet">Not Signed In yet? Sign Up</string>
+    <string name="sign_in">Sign In</string>
+</resources>
