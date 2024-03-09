@@ -12,7 +12,6 @@ import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import com.pavandev.codechef_task_manager.R
 import com.pavandev.codechef_task_manager.databinding.FragmentSignInBinding
-import com.pavandev.codechef_task_manager.databinding.FragmentSignUpBinding
 
 class SignInFragment : Fragment() {
 
@@ -44,17 +43,17 @@ class SignInFragment : Fragment() {
             val pass = binding.passET.text.toString().trim()
 
             if (email.isNotEmpty() && pass.isNotEmpty()) {
-                    auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(
-                        OnCompleteListener {
-                            if (it.isSuccessful) {
-                                Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show()
-                                navControl.navigate(R.id.action_signUpFragment_to_homeFragment)
-
-                            } else {
-                                Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT).show()
-                            }
-                        })
+                auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(
+                    OnCompleteListener {
+                        if (it.isSuccessful) {
+                            Toast.makeText(context, "Login Successful", Toast.LENGTH_SHORT).show()
+                            navControl.navigate(R.id.action_signInFragment_to_homeFragment)
+                        } else {
+                            Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT).show()
+                        }
+                    })
             }
+
         }
     }
 }

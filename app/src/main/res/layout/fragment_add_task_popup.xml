@@ -52,9 +52,9 @@
 
     <ImageView
         android:id="@+id/nextBtnTask"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="30dp"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="40dp"
         android:src="@drawable/right_arrow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card1" />

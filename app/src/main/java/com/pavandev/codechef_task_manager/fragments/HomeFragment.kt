@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.pavandev.codechef_task_manager.R
 import com.pavandev.codechef_task_manager.databinding.FragmentHomeBinding
 import com.pavandev.codechef_task_manager.utils.ToDoAdapter
 import com.pavandev.codechef_task_manager.utils.ToDoData
@@ -66,6 +67,11 @@ class HomeFragment : Fragment(), AddTaskPopupFragment.DialogNextBtnClickListener
                 childFragmentManager,
                 AddTaskPopupFragment.TAG
             )
+        }
+
+        binding.signOutBtn.setOnClickListener {
+            auth.signOut()
+            navController.navigate(R.id.action_homeFragment_to_signUpFragment)
         }
     }
 

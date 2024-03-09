@@ -35,7 +35,7 @@ class SplashFragment : Fragment() {
             if (auth.currentUser != null) {
                 navController.navigate(R.id.action_splashFragment_to_homeFragment)
             } else {
-                navController.navigate(R.id.action_splashFragment_to_signInFragment)
+                navController.navigate(R.id.action_splashFragment_to_signUpFragment)
             }
         }, 2000)
 

@@ -16,8 +16,8 @@
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true"/>
         <action
-            android:id="@+id/action_splashFragment_to_signInFragment"
-            app:destination="@id/signInFragment"
+            android:id="@+id/action_splashFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true"/>
     </fragment>
@@ -57,5 +57,11 @@
         android:id="@+id/homeFragment"
         android:name="com.pavandev.codechef_task_manager.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
 </navigation>
