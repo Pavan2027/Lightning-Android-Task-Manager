@@ -1,4 +1,4 @@
-# Lightning - A TODO App
+# Lightning Android - A TODO App
 ###  App Dev Assignment for CodeChef VIT and Mozilla Firefox VIT clubs
 
 ### Requirements:
