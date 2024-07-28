@@ -12,4 +12,4 @@
 <br><br>
 
 ### NOTE:
--> This app has will show Google Play Warnings as it is a test build.<br>
+-> This app has will show Google Play Warnings as it is a test build<br>
